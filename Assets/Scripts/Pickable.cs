@@ -5,10 +5,17 @@ using UnityEngine;
 public class Pickable : MonoBehaviour
 {
     Rigidbody rb;
-    public float maxDistance = 1f;
+    public float maxTweezerDistance = 1f;
+    public float maxRightPlaceDistance = 0.3f;
+    public GameObject rightPlace;
+    public bool inPlace;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
+        //failsafe
+        if (rightPlace == null)
+            rightPlace = gameObject;
     }
     private void OnTriggerStay(Collider other)
     {
@@ -30,11 +37,15 @@ public class Pickable : MonoBehaviour
         //drop object if tweezers too far
         if (transform.parent != null)
         {
-            if (Vector3.Distance(rb.transform.position, rb.transform.parent.position) > maxDistance)
+            if (Vector3.Distance(rb.transform.position, rb.transform.parent.position) > maxTweezerDistance)
             {
                 rb.useGravity = true;
                 rb.transform.parent = null;
             }
         }
+        if (Vector3.Distance(rb.transform.position, rightPlace.transform.position) < maxRightPlaceDistance)
+            inPlace = true;
+        else
+            inPlace = false;
     }
 }
