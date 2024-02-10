@@ -13,10 +13,11 @@ public class Tweezers : MonoBehaviour
     public GameObject grabPoint;
     void Update()
     {
-        //Tweezers follow mouse
+        //tweezers follow mouse
         pos = Input.mousePosition;
         pos.z = zpos;
         transform.position = Camera.main.ScreenToWorldPoint(pos);
+        //tweezers open and close with left mouse button
         if (Input.GetMouseButton(0))
         {
             sr.sprite = tweezersClosed;
