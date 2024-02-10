@@ -8,12 +8,15 @@ public class Pickable : MonoBehaviour
     public float maxTweezerDistance = 1f;
     public float maxRightPlaceDistance = 0.3f;
     public GameObject rightPlace;
+    public GameObject pivotPoint;
     public bool inPlace;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
+
         //failsafe
+        if (pivotPoint == null)
+            pivotPoint = gameObject;
         if (rightPlace == null)
             rightPlace = gameObject;
     }
@@ -34,16 +37,20 @@ public class Pickable : MonoBehaviour
             rb.useGravity = true;
             rb.transform.parent = null;
         }
-        //drop object if tweezers too far
         if (transform.parent != null)
         {
+            //drop object if tweezers too far
             if (Vector3.Distance(rb.transform.position, rb.transform.parent.position) > maxTweezerDistance)
             {
                 rb.useGravity = true;
                 rb.transform.parent = null;
             }
+            //rotate object by 45 degrees on z axis on right click
+            if (Input.GetMouseButtonUp(1))
+                rb.transform.Rotate(0f, 0.0f, 45.0f, Space.Self);
         }
-        if (Vector3.Distance(rb.transform.position, rightPlace.transform.position) < maxRightPlaceDistance)
+        //check if part is where it should be and in the right way
+        if (Vector3.Distance(pivotPoint.transform.position, rightPlace.transform.position) < maxRightPlaceDistance)
             inPlace = true;
         else
             inPlace = false;
