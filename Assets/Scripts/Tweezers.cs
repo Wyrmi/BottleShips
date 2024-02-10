@@ -9,9 +9,8 @@ public class Tweezers : MonoBehaviour
     public Sprite tweezersOpen;
     public Sprite tweezersClosed;
     public SpriteRenderer sr;
-    public bool enterClosed;
     public bool grabbing;
-    public Rigidbody rb;
+    public GameObject grabPoint;
     void Update()
     {
         //Tweezers follow mouse
@@ -21,10 +20,12 @@ public class Tweezers : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             sr.sprite = tweezersClosed;
+            grabbing = true;
         }
         else
         {
             sr.sprite = tweezersOpen;
+            grabbing = false;
         }
     }
 }
