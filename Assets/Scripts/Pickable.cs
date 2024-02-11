@@ -50,7 +50,7 @@ public class Pickable : MonoBehaviour
             }
             //rotate object by 45 degrees on z axis on right click
             if (Input.GetMouseButtonDown(1))
-                rb.transform.Rotate(0f, 0.0f, 45.0f, Space.Self);
+                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z + 45);
             //if object is a sail, toggle sail from middle mouse button
             if (Input.GetMouseButtonDown(2) && sailToggle != null)
             {
