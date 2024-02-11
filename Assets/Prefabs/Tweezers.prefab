@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 4182518178348608150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.87, y: 0, z: 0}
+  m_LocalPosition: {x: 1.87, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zpos: 10
+  xpos: -90
   tweezersOpen: {fileID: -1253874623, guid: e05dad335c5180643932dfe0a666d9a9, type: 3}
   tweezersClosed: {fileID: -426148802, guid: e05dad335c5180643932dfe0a666d9a9, type: 3}
   sr: {fileID: 803742326172641917}
@@ -196,8 +197,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.92227006, y: 0.3, z: 0.19999999}
-  m_Center: {x: 2.8388648, y: 0, z: 0}
+  m_Size: {x: 0.5595653, y: 0.3, z: 0.19999999}
+  m_Center: {x: 1.9121114, y: 0, z: 0}
 --- !u!1 &6739429705950403519
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +226,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 728196569986999343}
