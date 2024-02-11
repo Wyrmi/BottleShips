@@ -11,11 +11,12 @@ public class Pickable : MonoBehaviour
     public GameObject pivotPoint;
     public bool inPlace;
     public SailToggle sailToggle;
+    Vector3 resetPos;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        resetPos = transform.position;
         //failsafe
         if (pivotPoint == null)
             pivotPoint = gameObject;
@@ -51,7 +52,7 @@ public class Pickable : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
                 rb.transform.Rotate(0f, 0.0f, 45.0f, Space.Self);
             //if object is a sail, toggle sail from middle mouse button
-            if (Input.GetMouseButtonDown(2) && sailToggle !=null)
+            if (Input.GetMouseButtonDown(2) && sailToggle != null)
             {
                 sailToggle.ToggleSail();
             }
@@ -61,8 +62,13 @@ public class Pickable : MonoBehaviour
             inPlace = true;
         else
             inPlace = false;
+        //reset position if dropped out of bounds
+        if (transform.parent == null && !GetComponentInChildren<SpriteRenderer>().isVisible)
+        {
+            gameObject.transform.position = resetPos;
+        }
     }
-    
+
     //called from game manager when ship is assembled. freezes part in place
     public void EndDrop()
     {

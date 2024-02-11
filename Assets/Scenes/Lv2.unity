@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &118395043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3771029559159568105, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
-  m_PrefabInstance: {fileID: 737175814}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &293376655
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +199,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137405946982372691, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1390419563, guid: 3f95bcf19e48d5747b4f9785bf5a8422, type: 3}
+    - target: {fileID: 1583901390526109187, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3075961635053728648, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -301,6 +304,10 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 6485787485239089433, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1390419563, guid: 3f95bcf19e48d5747b4f9785bf5a8422, type: 3}
     - target: {fileID: 7489118422853086898, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
@@ -310,6 +317,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
+--- !u!1 &737175815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7534525170852882936, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
+  m_PrefabInstance: {fileID: 737175814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &812420541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325,7 +337,7 @@ PrefabInstance:
     - target: {fileID: 6175989081220141597, guid: 3e3fe06dc55ba3b43a6141836d4e59fc, type: 3}
       propertyPath: winScreen
       value: 
-      objectReference: {fileID: 118395043}
+      objectReference: {fileID: 737175815}
     - target: {fileID: 6606397170896824221, guid: 3e3fe06dc55ba3b43a6141836d4e59fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
