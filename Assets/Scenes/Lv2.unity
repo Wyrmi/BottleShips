@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6cbf9d844e2bf1744b43a7d833e337a5, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.5301055, g: 0.50333565, b: 0.7819871, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1121,12 +1121,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283366408156905824, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
       propertyPath: m_text
-      value: '"My grandmother always loved sailing, they would always go out on the
-        lake together. I even remember going with them when I was a child. After
-        my grandfathers health started declining they could no longer go sailing,
-        so he started making these ships for her."
-
-'
+      value: "\"I hope I\u2019ve done my grandfather\u2019s work justice, something
+        to let his last project be complete.\"\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6485787485239089433, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
       propertyPath: m_Sprite
@@ -1138,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7534525170852882936, guid: f0afba370e5f5944c8be885c1e61c744, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1362,7 +1358,7 @@ Transform:
   m_GameObject: {fileID: 1034321074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.685, y: -0.043, z: 0}
+  m_LocalPosition: {x: 0.677, y: -0.038, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
