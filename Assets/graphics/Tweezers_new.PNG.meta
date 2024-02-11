@@ -126,12 +126,12 @@ TextureImporter:
       name: Tweezers_new_0
       rect:
         serializedVersion: 2
-        x: 158
+        x: 155
         y: 1312
-        width: 4481
-        height: 201
+        width: 4475
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 5, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Tweezers_new_1
       rect:
         serializedVersion: 2
-        x: 158
-        y: 859
-        width: 4470
-        height: 249
+        x: 155
+        y: 862
+        width: 4475
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Tweezers_new_2
       rect:
         serializedVersion: 2
-        x: 167
-        y: 377
-        width: 4478
-        height: 204
+        x: 160
+        y: 380
+        width: 4475
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 3, w: 0}
       outline: []
       physicsShape: []
