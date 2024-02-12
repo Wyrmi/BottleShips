@@ -1,4 +1,4 @@
 # BottleShips
- Tavern game jam project
+ Tavern Tale's game jam entry
 
 https://wyrmi.itch.io/bottle-ships
